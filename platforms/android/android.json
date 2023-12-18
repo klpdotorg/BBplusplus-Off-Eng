@@ -18,30 +18,6 @@
               }
             }
           ],
-          "/manifest": [
-            {
-              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-permission android:name=\"com.google.android.gms.permission.AD_ID\" />",
-              "count": 1
-            }
-          ],
-          "/*/application": [
-            {
-              "xml": "<receiver android:exported=\"true\" android:name=\"com.appsflyer.MultipleInstallBroadcastReceiver\"><intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\" /></intent-filter></receiver>",
-              "count": 1
-            },
-            {
-              "xml": "<receiver android:enabled=\"true\" android:exported=\"true\" android:name=\"nl.xservices.plugins.ShareChooserPendingIntent\"><intent-filter><action android:name=\"android.intent.action.SEND\" /></intent-filter></receiver>",
-              "count": 1
-            }
-          ],
           "/*": [
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
@@ -107,6 +83,12 @@
               "xml": "<provider android:authorities=\"${applicationId}.sharing.provider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"nl.xservices.plugins.FileProvider\"><meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/sharing_paths\" /></provider>",
               "count": 1
             }
+          ],
+          "/*/application": [
+            {
+              "xml": "<receiver android:enabled=\"true\" android:exported=\"true\" android:name=\"nl.xservices.plugins.ShareChooserPendingIntent\"><intent-filter><action android:name=\"android.intent.action.SEND\" /></intent-filter></receiver>",
+              "count": 1
+            }
           ]
         }
       },
@@ -115,10 +97,6 @@
           "/*": [
             {
               "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"AppsFlyerPlugin\"><param name=\"android-package\" value=\"com.appsflyer.cordova.plugin.AppsFlyerPlugin\" /></feature>",
               "count": 1
             },
             {
@@ -198,23 +176,20 @@
   },
   "installed_plugins": {
     "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-androidx-adapter": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
-    },
-    "cordova-plugin-appsflyer-sdk": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-file": {
       "ANDROIDX_WEBKIT_VERSION": "1.4.0",
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-firebasex": {
       "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
@@ -240,43 +215,43 @@
       "ANDROID_GSON_VERSION": "2.9.0",
       "ANDROID_FIREBASE_PERF_GRADLE_PLUGIN_VERSION": "1.4.1",
       "ANDROID_GRPC_OKHTTP": "1.46.0",
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-fullscreen": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-native-spinner": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-navigationbar": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-plugin-zip": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     },
     "nl.madebymark.share": {
-      "PACKAGE_NAME": "com.Akshara.BBplusplusOffEng"
+      "PACKAGE_NAME": "com.akshara.BBplusplusOffEng"
     }
   },
   "dependent_plugins": {},
@@ -287,22 +262,6 @@
       "pluginId": "cordova-plugin-android-permissions",
       "clobbers": [
         "cordova.plugins.permissions"
-      ]
-    },
-    {
-      "id": "cordova-plugin-appsflyer-sdk.appsflyer",
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/appsflyer.js",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "window.plugins.appsFlyer"
-      ]
-    },
-    {
-      "id": "cordova-plugin-appsflyer-sdk.AppsFlyerError",
-      "file": "plugins/cordova-plugin-appsflyer-sdk/www/AppsFlyerError.js",
-      "pluginId": "cordova-plugin-appsflyer-sdk",
-      "clobbers": [
-        "AppsFlyerError"
       ]
     },
     {
@@ -624,7 +583,6 @@
   "plugin_metadata": {
     "cordova-plugin-android-permissions": "1.1.5",
     "cordova-plugin-androidx-adapter": "1.1.3",
-    "cordova-plugin-appsflyer-sdk": "6.8.2-rc1",
     "cordova-plugin-device": "2.1.0",
     "cordova-plugin-file": "7.0.0",
     "cordova-plugin-file-transfer": "1.7.1",

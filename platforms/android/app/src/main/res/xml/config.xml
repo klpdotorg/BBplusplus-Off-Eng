@@ -1,10 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.akshara.BBplusplusOffEng" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="1" id="com.akshara.BBplusplusOffEng" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Permissions">
         <param name="android-package" value="com.android.plugins.Permissions" />
-    </feature>
-    <feature name="AppsFlyerPlugin">
-        <param name="android-package" value="com.appsflyer.cordova.plugin.AppsFlyerPlugin" />
     </feature>
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
@@ -55,7 +52,7 @@
     <feature name="Zip">
         <param name="android-package" value="org.apache.cordova.Zip" />
     </feature>
-    <name>BBplusplus-Off-Eng</name>
+    <name>Building Blocks 6-8 Eng</name>
     <description>Sample Apache Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
@@ -82,6 +79,7 @@
     <preference name="AndroidPersistentFileLocation" value="Internal" />
     <preference name="AndroidXEnabled" value="false" />
     <preference name="android-minSdkVersion" value="21" />
+    <preference name="android-targetSdkVersion" value="33" />
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="portrait" />
     <preference name="AndroidInsecureFileModeEnabled" value="true" />

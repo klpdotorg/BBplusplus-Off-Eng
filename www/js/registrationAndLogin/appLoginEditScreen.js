@@ -47,7 +47,8 @@ Game.appLoginEditScreen.prototype = {
 		_this.basePath = cordova.file.externalRootDirectory + "Android/data/com.akshara.BBplusplusOffEng/Files/Download/.gameFilesBB++V10_2/www/";
 
 		//* nEED to change this ****
-		_this.fullSize = 302978124;
+		_this.fullSize = 290752470;//,302978124
+		//BBplusplusOffENG
 
 		//* change this zip file size according to bb++ ******
 		// _this.zipFiles = [["Assets1.zip", 26430143], ["Assets2.zip", 39780906], ["Assets3.zip", 18453216],
@@ -55,8 +56,8 @@ Game.appLoginEditScreen.prototype = {
 		// ["English.zip", 23759971], ["Kannada.zip", 25787866], ["Hindi.zip", 25508626],
 		// ["Odiya.zip", 40129117], ["Gujarati.zip", 31882078], ["questionSounds.zip", 162758079]];
 
-		_this.zipFiles = [["Assets1.zip", 565373], ["Assets2.zip", 25572815], ["Assets4.zip", 66105124], ["EnglishquestionSounds.zip", 29272691], ["HindiquestionSounds.zip", 29272691],
-		["KannadaquestionSounds.zip", 29272691], ["OdiyaquestionSounds.zip", 48682701], ["MarathiquestionSounds.zip", 39766797], ["TamilquestionSounds.zip", 30783494], ["sounds.zip", 3683747]];
+		_this.zipFiles = [["Assets1.zip", 981561], ["Assets2.zip", 87770921], ["Assets4.zip", 95177050], ["EnglishquestionSounds.zip", 103080138],["sounds.zip", 3742800]];// old = 3683747
+		 //["HindiquestionSounds.zip", 29272691],["KannadaquestionSounds.zip", 29272691], ["OdiyaquestionSounds.zip", 48682701], ["MarathiquestionSounds.zip", 39766797], ["TamilquestionSounds.zip", 30783494],
 
 		_this.counter = 0;
 		_this.counter1 = 0;
@@ -185,7 +186,7 @@ Game.appLoginEditScreen.prototype = {
 		}, false);
 
 
-		var titleTxt = game.add.text(game.world.centerX - 80, 45, "Building Blocks++");
+		var titleTxt = game.add.text(game.world.centerX - 10, 45, "Building Blocks 6-8 by Akshara");
 		titleTxt.x = Math.round(titleTxt.x);
 		titleTxt.anchor.setTo(0.5);
 		titleTxt.align = 'center';
@@ -248,13 +249,13 @@ Game.appLoginEditScreen.prototype = {
 		_this.regandstsrtBtnTxt.wordWrapWidth = 500;
 
 		// Need to discuss about this with hari sir ********
-		_this.userEditBtn = _this.add.sprite(game.world.centerX - 150, game.world.centerY, 'userEditBtn');
-		_this.userEditBtn.scale.setTo(0.4);
-		_this.userEditBtn.anchor.setTo(0.5);
-		_this.userEditBtn.inputEnabled = true;
-		_this.userEditBtn.events.onInputDown.add(function () {
-			_this.state.start('editLangScreen', true, false, _this.user, _this.app_Mode);
-		}, _this);
+		// _this.userEditBtn = _this.add.sprite(game.world.centerX - 150, game.world.centerY, 'userEditBtn');
+		// _this.userEditBtn.scale.setTo(0.4);
+		// _this.userEditBtn.anchor.setTo(0.5);
+		// _this.userEditBtn.inputEnabled = true;
+		// _this.userEditBtn.events.onInputDown.add(function () {
+		// 	_this.state.start('editLangScreen', true, false, _this.user, _this.app_Mode);
+		// }, _this);
 
 		_this.userProgressBtn = _this.add.sprite(game.world.centerX + 150, game.world.centerY, 'userProgressBtn');
 		_this.userProgressBtn.scale.setTo(0.4);
@@ -401,7 +402,7 @@ Game.appLoginEditScreen.prototype = {
 				console.log(_this.counter, "counter>>>>>>");
 				_this.checkIfAllAssetsPresent();
 			}, function (error) {
-				console.log("file not present:download" + filename);
+				console.log("file not present:download" + filename); 
 				_this.downloadFiles(filename);
 			});
 	},
