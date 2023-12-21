@@ -244,8 +244,8 @@ Game.practiceModegradeSelectionScreen.prototype = {
 			this.helpIcon = game.add.image(820, 21, 'helpIcon');
 			this.helpIcon.scale.setTo(0.8);
 			this.helpIcon.anchor.setTo(0.5);
-			this.helpIcon.inputEnabled = true;
-			this.helpIcon.input.useHandCursor = true;
+			//this.helpIcon.inputEnabled = true;
+			//this.helpIcon.input.useHandCursor = true;
 			// this.helpIcon.events.onInputDown.add(function()
 			// {
 			// 	this.clickSound = this.add.audio('ClickSound');
